@@ -42,11 +42,11 @@ public class GreeterTest {
       System.out.println(greeter.greet(name));
       System.out.println("====================");
       System.out.println("====================");
-      Assert.assertEquals("" + name, greeter.greet(name));
+      Assert.assertEquals("Hello, " + name, greeter.greet(name));
    }
 
    @Test
-   public void should_greet_earthlings_1() throws Exception {
+   public void should_fail() throws Exception {
       String name = "Earthlings";
       System.out.println("====================");
       System.out.println("====================");
@@ -56,19 +56,9 @@ public class GreeterTest {
       Assert.assertEquals("" + name, greeter.greet(name));
    }
 
-   @Test
-   public void should_greet_earthlings_2() throws Exception {
-      String name = "Earthlings";
-      System.out.println("====================");
-      System.out.println("====================");
-      System.out.println(greeter.greet(name));
-      System.out.println("====================");
-      System.out.println("====================");
-      Assert.assertEquals("" + name, greeter.greet(name));
-   }
 
    @Test@Ignore
-   public void should_greet_earthlings_3() throws Exception {
+   public void should_skip() throws Exception {
       String name = "Earthlings";
       System.out.println("====================");
       System.out.println("====================");
