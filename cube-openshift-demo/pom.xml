@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.arquillian.cube.openshift</groupId>
+  <artifactId>org-arquillian-cube-openshift-demo</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <version.arquillian_core>1.2.0.Final</version.arquillian_core>
+    <version.arquillian_cube>1.11.0</version.arquillian_cube>
+    <version.junit>4.12</version.junit>
+    <version.kubernetes_client>3.1.5</version.kubernetes_client>
+    <version.assertj>3.8.0</version.assertj>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jboss.arquillian.junit</groupId>
+      <artifactId>arquillian-junit-standalone</artifactId>
+      <scope>test</scope>
+      <version>${version.arquillian_core}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.arquillian.cube</groupId>
+      <artifactId>arquillian-cube-openshift</artifactId>
+      <scope>test</scope>
+      <version>${version.arquillian_cube}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <scope>test</scope>
+      <version>${version.assertj}</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${version.junit}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.fabric8</groupId>
+      <artifactId>openshift-client</artifactId>
+      <version>${version.kubernetes_client}</version>
+    </dependency>
+  </dependencies>
+</project>
